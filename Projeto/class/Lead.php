@@ -136,7 +136,7 @@ class Lead extends Sql {
         $results = $sql->runQuery("INSERT INTO leads
         values(:CODIGO ,:NOME, :CEP, :RUA, :BAIRRO, :CIDADE, 
         :ESTADO, :EMAIL, :TELEFONE, :DESCRICAO, :STATUSLEAD)", array(
-            ':CODIGO' => "",
+            ':CODIGO' => 0,
             ':NOME' => $this->getNomeEmpresa(),
             ':CEP' => $this->getCepEmpresa(),
             ':RUA' => $this->getRuaEmpresa(),
